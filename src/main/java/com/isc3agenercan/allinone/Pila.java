@@ -46,7 +46,7 @@ public class Pila
         }
         length++;
     }
-    public void Desapilar()
+    public Object Desapilar()
     {
        
         if(!EsVacio())
@@ -55,5 +55,6 @@ public class Pila
             pila = temp.GetSiguiente();
             length--;
         }
+        return  pila.GetObjecto();
     }
 }
